@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>About <Link to="/">to the main page</Link></div>
   )
 }
 
-export default About
+export  {About}
