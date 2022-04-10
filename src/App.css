@@ -31,4 +31,14 @@
   font-size: 20px;
   text-decoration: none;
 }
+.link-posts {
+  margin: 10px 0px 0px 10px;
+  font-weight: bold;
+  border-radius: 14px;
+  padding: 4px;
+  width: 60px;
+  text-align: center;
+  border: 2px solid #000;
+}
+
 
