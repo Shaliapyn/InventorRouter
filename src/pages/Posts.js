@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
+import { styleH1 } from './Singlpage';
 
 const Posts = () => {
-  const [posts, setPosts] = useState([])
   
+  const [posts, setPosts] = useState([])
+  console.log(useLocation())
   const postsURL = "https://jsonplaceholder.typicode.com/posts";
 
   useEffect(()=>{
@@ -14,6 +17,7 @@ const Posts = () => {
 
   return (
     <div>
+      <h2 style={styleH1}>POSTS</h2>
       {posts.map(post => (
         <Link key={post.id} to={`/posts/${post.id}`}>
           <li>{post.title}</li>

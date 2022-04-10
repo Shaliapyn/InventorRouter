@@ -13,7 +13,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='about' element={< About />} />
